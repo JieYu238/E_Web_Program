@@ -11,7 +11,7 @@ function calculate(){
        expression = expression.replace(/(\d+)%/g,"($1/100)");
        const isValid = /^[\d+\-*/().%]*$/.test(expression);
        if(isValid){
-        display.value = new Function(`return ${expression}`)();
+        display.value = new Function(`return ${expression}`)().tofixed(2);
        }else{
         display.value = "ERROR";
        }
