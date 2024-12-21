@@ -1,0 +1,42 @@
+body{
+    font-family:"Mukta Mahee", serif;
+    font-weight: bold;
+    border:none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-size: 3rem;
+    color:hsl(0, 0%, 20%);
+}
+.choices{
+    margin-bottom: 30px;
+}
+.choices img{
+    max-width: 130px;
+    border: 5px solid hsla(0, 0%, 0%, 0.682);
+    border-radius: 250px;
+    background-color: hsl(212, 75%, 48%);
+    margin:0 10px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+.choices img:hover{
+    background-color: hsl(269, 55%, 66%);
+}
+#player, #computer{
+    font-size: 1rem;
+}
+#playerChoiceDisplay, #computerChoiceDisplay{
+    display:none;
+}
+#resultDisplay{
+    font-size: 3rem;
+}
+.greenText, #playerScoreDisplay{
+    color:hsl(120, 100%, 25%);
+}
+.redText, #computerScoreDisplay{
+    color:hsl(0, 100%, 50%);
+}
