@@ -14,7 +14,7 @@ const checkPalindrome = () => {
     checkPalindromeChars(cleanedText);
     displayResult();
 }
-
+}
 const removeUnwantedCharacters = (str) => {
   const regex = /[_().,-\/:\|\s]/gi;
   return str.replace(regex, "").toLowerCase();
