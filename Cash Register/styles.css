@@ -1,0 +1,112 @@
+:root{
+  --light-gray:#dfdfe2;
+  --dark-blue:#0a0a23;
+  --light-blue:#99c9ff;
+  --gray-blue:#627fa1;
+  --btn-yellow1:#feac32;
+  --btn-yellow2:#fecc4c;
+  --btn-yellow3:#ffac33;
+  --btn-black: #000000;
+}
+*,::before,::after{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  background-color:var(--dark-blue);
+  font-family:Verdana;
+}
+main{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding:40px;
+}
+#change-due{
+  font-size:1.2rem;
+  text-align:left;
+  color:var(--light-gray);
+  margin-bottom:20px;
+}
+h1{
+  color:var(--light-gray);
+  text-align:center;
+  margin:30px 0;
+}
+.input-div{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin:5px 0 30px;
+}
+label{
+  color:var(--light-gray);
+  font-size:20px;
+}
+input{
+  margin:15px 0;
+  font-size:20px;
+  text-align:center;
+  padding:5px;
+}
+.purchase-btn{
+  margin:10px 0;
+  padding:5px 2px;
+  font-size:20px;
+  font-weight:bold;
+  border-width:3px;
+  border-color:var(--btn-yellow1);
+  background-color:var(--btn-yellow1);
+  background:linear-gradient(var(--btn-yellow2),var(--btn-yellow3));
+}
+.price-screen{
+  color:var(--light-gray);
+  background-color:var(--btn-black);
+  border:12px solid var(--light-blue);
+  border-radius:2px;
+  width:250px;
+  height:50px;
+  font-size:20px;
+  text-align:center;
+}
+.connector{
+  background-color:var(--light-blue);
+  margin-top:0;
+  margin-left:30px;
+  width:50px;
+  height:40px;
+}
+.cashier-container{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.register{
+  background-color:var(--light-blue);
+  width:350px;
+  height:250px;
+  display:flex;
+  justify-content:space-around;
+  border-top-right-radius:20px;
+  border-top-left-radius:20px;
+  padding:20px 20px 10px 20px;
+}
+.btns{
+  width:25%;
+}
+.btn{
+  background-color:var(--btn-black);
+  width:22px;
+  height:22px;
+  border-radius:5px;
+}
+.cash-drawer{
+  background-color:var(--gray-blue);
+  color:var(--light-gray);
+  padding:10px;
+  border-radius:5px;
+}
